@@ -11,9 +11,9 @@
 
 Despues de haber clonado el repositorio se procede con las instalación de dependencias, esto esta automatizado dentro de script de makefile, solo basta con ejecutar en la consolta el comando
 
-``
+```
 make install
-``
+```
 en este paso ya se asume que tiene instalado **Nodejs** y **Serveless framework**, esto es importante por que sin ello no se podra ejecutar los siguientes scripts.
 
 ## Ejecución
@@ -30,18 +30,18 @@ se cuenta con varias ejecuciones
 ## Ejemplo de credenciales
 por lo general cuando inicias tu cuenta en aws te permite establecer las credenciales por medio de un archivo "credentials" o a traves de variables de entorno
 ### credentials
-``
+```
 [default]
 aws_access_key_id = XXXXXXXXXXXXXXXXXXXX;
 aws_secret_access_key = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 aws_sesion_token = xxxxxx.......xxxxxxxxx
-``
+```
 ### Environments
-``
+```
 export AWS_ACCESS_KEY_ID="XXXXXXXXXXXXXXXXXXXX"
 export AWS_SECRET_ACCESS_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 export AWS_SESSION_TOKEN="xxxxxx.......xxxxxxxxx"
-``
+```
 
 ## Lista de Endpoints
 una vez desplegado el proyecto en local o en una cuenta de aws se tendra unos enpoints que se describen a continuacion
@@ -57,7 +57,7 @@ una vez desplegado el proyecto en local o en una cuenta de aws se tendra unos en
 
 **Body de ejemplo:
 
-``
+```
 {
         "id": "1", 
         "nombre": "specie nueva",
@@ -82,7 +82,7 @@ una vez desplegado el proyecto en local o en una cuenta de aws se tendra unos en
         "editado": "2014-12-20T21:36:42.142000Z",
         "url": "https://swapi.py4e.com/api/species/3/"
     }
-``
+```
 ## Responses
 todos los endpoint tienen un campo "message" en las respuestas, asi como tambien su cabecera con el codigo de respuesta, esto esta definido en el archivo "./app/src/utils/response.ts"
 ## Loggers
